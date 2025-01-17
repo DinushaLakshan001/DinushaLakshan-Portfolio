@@ -1,0 +1,219 @@
+<html lang="en" class="dark-theme">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <div class="code-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <span>DevPortfolio</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-btn">
+        <div class="menu-btn__burger"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="profile-container">
+          <div class="profile-image">
+            <img src="433452852_426525836592524_9220895678872612140_n.jpg" alt="Professional headshot">
+          </div>
+          <h1>Hi, I'm <span class="highlight">Dinusha Lakshan Rathnayaka</span></h1>
+          <h2>Full Stack Developer</h2>
+          <p>I create beautiful and functional web applications</p>
+          <div class="cta-buttons">
+            <a href="#projects" class="btn primary">My Works</a>
+            <a href="#contact" class="btn secondary">Contact Me</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-animation">
+        <svg viewBox="0 0 200 200" class="blob">
+          <path fill="#4A90E2">
+            <animate attributeName="d" dur="10s" repeatCount="indefinite" values="M42.7,-73.2C55.9,-67.3,67.7,-57.1,75.6,-44.2C83.5,-31.3,87.6,-15.7,86.4,-0.7C85.2,14.3,78.8,28.5,70.8,41.8C62.8,55.1,53.3,67.4,40.6,74.7C27.9,82,13.9,84.4,-0.7,85.6C-15.3,86.8,-30.6,86.8,-43.8,80.6C-57,74.4,-68.1,62,-75.2,47.6C-82.3,33.2,-85.4,16.6,-84.6,0.5C-83.8,-15.7,-79,-31.3,-70.8,-44.7C-62.5,-58,-50.7,-69,-37.3,-74.5C-23.9,-80,-11.9,-80,1.9,-83.2C15.7,-86.4,31.4,-92.8,42.7,-73.2Z;M43.3,-73.6C57.4,-67.3,71.1,-58.5,79.2,-45.7C87.3,-32.8,89.8,-16.4,88.7,-0.6C87.6,15.2,82.9,30.4,74.7,43.5C66.5,56.6,54.8,67.5,41.1,74.4C27.4,81.4,13.7,84.3,-0.9,85.8C-15.5,87.4,-31,87.6,-44.3,81.5C-57.6,75.4,-68.7,63,-76.5,48.6C-84.4,34.2,-89,17.1,-88.2,0.5C-87.4,-16.2,-81.2,-32.3,-72.1,-45.9C-63,-59.5,-51,-70.5,-37.4,-77C-23.8,-83.5,-11.9,-85.6,1.4,-88C14.7,-90.4,29.3,-93.2,43.3,-73.6Z;M42.7,-73.2C55.9,-67.3,67.7,-57.1,75.6,-44.2C83.5,-31.3,87.6,-15.7,86.4,-0.7C85.2,14.3,78.8,28.5,70.8,41.8C62.8,55.1,53.3,67.4,40.6,74.7C27.9,82,13.9,84.4,-0.7,85.6C-15.3,86.8,-30.6,86.8,-43.8,80.6C-57,74.4,-68.1,62,-75.2,47.6C-82.3,33.2,-85.4,16.6,-84.6,0.5C-83.8,-15.7,-79,-31.3,-70.8,-44.7C-62.5,-58,-50.7,-69,-37.3,-74.5C-23.9,-80,-11.9,-80,1.9,-83.2C15.7,-86.4,31.4,-92.8,42.7,-73.2Z"></animate>
+          </path>
+        </svg>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>I'm a passionate full-stack developer with expertise in modern web technologies. With 1 year of experience, I've been learning and working on various web development technologies and concepts.</p>
+          <p>My goal is to build applications that not only look great but also provide exceptional user experience and solve real-world problems.</p>
+        </div>
+        <div class="experience">
+          <div class="exp-item">
+            <i class="fas fa-laptop-code"></i>
+            <h3><span id="projectCount">0</span>+</h3>
+            <p>Projects Completed</p>
+          </div>
+          <div class="exp-item">
+            <i class="fas fa-users"></i>
+            <h3><span id="clientCount">0</span>+</h3>
+            <p>Happy Clients</p>
+          </div>
+          <div class="exp-item">
+            <i class="fas fa-clock"></i>
+            <h3>1+</h3>
+            <p>Years Experience</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>My Projects</h2>
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Projects will be dynamically added here -->
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fab fa-html5"></i>
+          <h3>HTML5</h3>
+          <div class="progress-bar" data-percent="95"></div>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-css3-alt"></i>
+          <h3>CSS3</h3>
+          <div class="progress-bar" data-percent="90"></div>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-js"></i>
+          <h3>JavaScript</h3>
+          <div class="progress-bar" data-percent="85"></div>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-react"></i>
+          <h3>React</h3>
+          <div class="progress-bar" data-percent="80"></div>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-node"></i>
+          <h3>Node.js</h3>
+          <div class="progress-bar" data-percent="75"></div>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-database"></i>
+          <h3>MongoDB</h3>
+          <div class="progress-bar" data-percent="70"></div>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-python"></i>
+          <h3>Python</h3>
+          <div class="progress-bar" data-percent="80"></div>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-microsoft"></i>
+          <h3>C#</h3>
+          <div class="progress-bar" data-percent="75"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Get In Touch</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>dinushaesoft88@gmail.com</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <p>+94 754934796</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>125/2/N/1/A Ramahera Road,<br>Hewagama, Kaduwela,<br>Sri Lanka</p>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/dinusha" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/dinusha-lakshan" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/dinusha" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100077053327016&mibextid=ZbWKwL" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/94754934796" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dinusha Lakshan Rathnayaka. All rights reserved.</p>
+  </footer>
+
+  <div id="adminModal" class="modal">
+    <div class="modal-content">
+      <h2>Admin Login</h2>
+      <input type="password" id="adminPassword" placeholder="Enter password">
+      <button onclick="checkPassword()" class="btn primary">Login</button>
+    </div>
+  </div>
+
+  <div id="adminPanel" class="admin-panel hidden">
+    <div class="admin-header">
+      <h2>Admin Panel</h2>
+      <button onclick="logout()" class="btn secondary">Logout</button>
+    </div>
+    
+    <div class="admin-section">
+      <h3>Add New Project</h3>
+      <form id="addProjectForm" class="admin-form">
+        <input type="text" name="title" placeholder="Project Title" required>
+        <input type="text" name="description" placeholder="Project Description" required>
+        <input type="text" name="technologies" placeholder="Technologies Used (comma separated)" required>
+        <input type="url" name="link" placeholder="Project Link">
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit" class="btn primary">Add Project</button>
+      </form>
+    </div>
+
+    <div class="admin-section">
+      <h3>Add New Client</h3>
+      <form id="addClientForm" class="admin-form">
+        <input type="text" name="name" placeholder="Client Name" required>
+        <input type="text" name="company" placeholder="Company Name">
+        <textarea name="testimonial" placeholder="Client Testimonial" required></textarea>
+        <button type="submit" class="btn primary">Add Client</button>
+      </form>
+      <div id="clientsList">
+        <!-- Clients will be listed here with delete buttons -->
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS user ID
+  </script>
+</body>
+</html>
